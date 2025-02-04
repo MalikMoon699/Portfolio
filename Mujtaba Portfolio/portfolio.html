@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mujtaba Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div><h2>Mujtaba</h2></div>
+        <nav>
+          <ul class="navList">
+            <li><a href="index.html" class="hover">Home</a></li>
+            <li><a href="about.html" class="hover">About</a></li>
+            <li><a href="resume.html" class="hover">Resume</a></li>
+            <li><a href="services.html" class="hover">Services</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li id="dropDown" class="hover">
+              <span>Dropdown </span
+              ><span
+                ><img class="arrow" src="assets/img/arrow.png" alt=""
+              /></span>
+              <ul id="firstDrop" hidden>
+                <li class="hover unHover">Dropdown 1</li>
+                <li id="deepDropDown">
+                  <span class="hover unHover">Deep Dropdown</span
+                  ><span
+                    ><img class="arrow" src="assets/img/arrow.png" alt=""
+                  /></span>
+                  <ul id="deepDrop" hidden>
+                    <li class="hover unHover">Deep Dropdown 1</li>
+                    <li class="hover unHover">Deep Dropdown 2</li>
+                    <li class="hover unHover">Deep Dropdown 3</li>
+                    <li class="hover unHover">Deep Dropdown 4</li>
+                    <li class="hover unHover">Deep Dropdown 5</li>
+                  </ul>
+                </li>
+                <li class="hover unHover">Dropdown 2</li>
+                <li class="hover unHover">Dropdown 3</li>
+                <li class="hover unHover">Dropdown 4</li>
+              </ul>
+            </li>
+            <li><a href="contact.html" class="hover">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="linkList">
+            <li>
+              <a target="_blank" href="http://x.com/"
+                ><img class="img" src="assets/img/xLogo.png" alt="X"
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61551759224533"
+                ><img
+                  class="img"
+                  src="assets/img/facebookLogo.png"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/moonawan695/"
+                ><img
+                  class="img"
+                  src="assets/img/instaLogo.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/login"
+                ><img
+                  class="img"
+                  src="assets/img/linkinLogo.png"
+                  alt="Linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="innerContainer">
+        <h1>Portfolio</h1>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="filterMain">
+        <div class="filter active-filter" onclick="filterGallery('all', event)">
+          All
+        </div>
+        <div class="filter" onclick="filterGallery('app', event)">App</div>
+        <div class="filter" onclick="filterGallery('card', event)">Card</div>
+        <div class="filter" onclick="filterGallery('web', event)">Web</div>
+      </div>
+      <div class="imgMain">
+        <div class="app all">
+          <span><img src="assets/img/app-1.jpg" /> </span>
+          <span><img src="assets/img/app-2.jpg" /> </span>
+          <span><img src="assets/img/app-3.jpg" /> </span>
+        </div>
+        <div class="card all">
+          <span><img src="assets/img/card-1.jpg" /> </span>
+          <span><img src="assets/img/card-2.jpg" /> </span>
+          <span><img src="assets/img/card-3.jpg" /> </span>
+        </div>
+        <div class="web all">
+          <span><img src="assets/img/web-1.jpg" /> </span>
+          <span><img src="assets/img/web-2.jpg" /> </span>
+          <span><img src="assets/img/web-3.jpg" /> </span>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="innerContainer">
+        <div>
+          <p>
+            © <span>Copyright</span> <strong>Mujtaba</strong>
+            <span>All Rights Reserved<br /></span>
+          </p>
+        </div>
+        <div>
+          <ul class="linkList fList">
+            <li>
+              <a target="_blank" href="http://x.com/"
+                ><img class="img" src="assets/img/xLogo.png" alt="X"
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61551759224533"
+                ><img
+                  class="img"
+                  src="assets/img/facebookLogo.png"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/moonawan695/"
+                ><img
+                  class="img"
+                  src="assets/img/instaLogo.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/login"
+                ><img
+                  class="img"
+                  src="assets/img/linkinLogo.png"
+                  alt="Linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <p>Designed by Mujtaba Distributed by Mujtaba</p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+  </body>
+</html>

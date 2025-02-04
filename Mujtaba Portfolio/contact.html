@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mujtaba Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="headerContainer">
+        <div><h2>Mujtaba</h2></div>
+        <nav>
+          <ul class="navList">
+            <li><a href="index.html" class="hover">Home</a></li>
+            <li><a href="about.html" class="hover">About</a></li>
+            <li><a href="resume.html" class="hover">Resume</a></li>
+            <li><a href="services.html" class="hover">Services</a></li>
+            <li><a href="portfolio.html" class="hover">Portfolio</a></li>
+            <li id="dropDown" class="hover">
+              <span>Dropdown </span
+              ><span
+                ><img class="arrow" src="assets/img/arrow.png" alt=""
+              /></span>
+              <ul id="firstDrop" hidden>
+                <li class="hover unHover">Dropdown 1</li>
+                <li id="deepDropDown">
+                  <span class="hover unHover">Deep Dropdown</span
+                  ><span
+                    ><img class="arrow" src="assets/img/arrow.png" alt=""
+                  /></span>
+                  <ul id="deepDrop" hidden>
+                    <li class="hover unHover">Deep Dropdown 1</li>
+                    <li class="hover unHover">Deep Dropdown 2</li>
+                    <li class="hover unHover">Deep Dropdown 3</li>
+                    <li class="hover unHover">Deep Dropdown 4</li>
+                    <li class="hover unHover">Deep Dropdown 5</li>
+                  </ul>
+                </li>
+                <li class="hover unHover">Dropdown 2</li>
+                <li class="hover unHover">Dropdown 3</li>
+                <li class="hover unHover">Dropdown 4</li>
+              </ul>
+            </li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="linkList">
+            <li>
+              <a target="_blank" href="http://x.com/"
+                ><img class="img" src="assets/img/xLogo.png" alt="X"
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61551759224533"
+                ><img
+                  class="img"
+                  src="assets/img/facebookLogo.png"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/moonawan695/"
+                ><img
+                  class="img"
+                  src="assets/img/instaLogo.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/login"
+                ><img
+                  class="img"
+                  src="assets/img/linkinLogo.png"
+                  alt="Linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="innerContainer">
+        <h1>Contact</h1>
+        <p>
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+      <div class="mainContainer">
+        <div class="leftContainer">
+          <div>
+            <div>
+              <h2>Address</h2>
+              <p>lahore ,Gulbarg street-25 , Pakistan</p>
+            </div>
+          </div>
+          <div>
+            <h2>Call Us</h2>
+            <p>+92 3197166872</p>
+          </div>
+          <div>
+            <h2>Email Us</h2>
+            <p>malikmoon.developer061@gmail.com</p>
+          </div>
+          <div class="location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+              frameborder="0"
+              style="border: 0; width: 100%; height: 270px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="rightContainer">
+          <label for="name-field">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name-field"
+            class="formControl"
+            required=""
+          />
+          <label for="email-field">Your Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email-field"
+            class="formControl"
+            required=""
+          />
+          <label for="subject-field">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject-field"
+            class="formControl"
+            required=""
+          />
+          <label for="message-field" class="pb-2">Message</label>
+          <textarea
+            class="formControl"
+            name="message"
+            rows="10"
+            id="message-field"
+            required=""
+          ></textarea>
+          <div class="btn">
+            <button>sign in</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="innerContainer">
+        <div>
+          <p>
+            © <span>Copyright</span> <strong>Mujtaba</strong>
+            <span>All Rights Reserved<br /></span>
+          </p>
+        </div>
+        <div>
+          <ul class="linkList fList">
+            <li>
+              <a target="_blank" href="http://x.com/"
+                ><img class="img" src="assets/img/xLogo.png" alt="X"
+              /></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61551759224533"
+                ><img
+                  class="img"
+                  src="assets/img/facebookLogo.png"
+                  alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/moonawan695/"
+                ><img
+                  class="img"
+                  src="assets/img/instaLogo.png"
+                  alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/login"
+                ><img
+                  class="img"
+                  src="assets/img/linkinLogo.png"
+                  alt="Linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <p>Designed by Mujtaba Distributed by Mujtaba</p>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

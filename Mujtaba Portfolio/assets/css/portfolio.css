@@ -1,0 +1,67 @@
+.filterMain {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  justify-content: center;
+  padding-bottom: 18px;
+}
+
+.filter {
+  padding: 2px 12px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.active-filter {
+  color: aliceblue;
+  background-color: #34b7a7;
+  padding: 2px 12px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.filter:hover {
+  color: aliceblue;
+  background-color: #34b7a7;
+  letter-spacing: 1px;
+  padding: 2px 12px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.imgMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.imgMain img {
+  padding: 12px;
+  cursor: pointer;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.04);
+}
+.imgMain img:hover {
+  padding: 12px;
+}
+
+.app img {
+  height: 44vh;
+}
+
+.card img {
+  height: 48vh;
+}
+
+.web img {
+  height: 45vh;
+}
+
+.textBack {
+  background-color: rgba(255, 255, 255, 0.72);
+  position: relative;
+  left: 19px;
+  bottom: 67px;
+}
+
+.all{
+  display: flex;
+}
