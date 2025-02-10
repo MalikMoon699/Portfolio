@@ -3,9 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+.hamburger {
+  display: none;
+}
 
 .innerContainer {
-  padding: 60px 0px;
+  padding: 60px 12px;
 }
 li {
   list-style: none;
@@ -44,20 +47,27 @@ header {
   padding: 15px 27px;
   transition: all 0.5s;
   z-index: 997;
+  overflow: hidden;
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
+.burgerLine {
+  height: 4px;
+  width: 23px;
+  background-color: black;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
-.unHover{
+.unHover {
   color: black;
 }
-.unHover::before{
+.unHover::before {
   visibility: hidden;
 }
 
-button a{
+button a {
   color: #e9e8e6;
 }
 
@@ -69,7 +79,7 @@ button {
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.3s;
-  margin-top: 30px;
+  margin: 23px;
 }
 button:hover {
   background-color: #059a88;
@@ -88,6 +98,7 @@ h2 {
 }
 .innerIndex {
   color: #ffffff;
+  padding: 6px 4px;
   z-index: 100;
 }
 .headerContainer {
@@ -113,12 +124,11 @@ h2 {
   color: #34b7a7;
   transition: 0.2s;
 }
-.hover:hover::before{
+.hover:hover::before {
   position: relative;
   width: 0px;
   transition: 0.2s;
 }
-
 
 .hover:hover::before {
   content: "";
@@ -190,7 +200,7 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  bottom: -79px;
+  bottom: -59px;
   background: linear-gradient(
     to bottom,
     rgba(89, 86, 86, 0) 10%,
@@ -214,4 +224,39 @@ footer {
 
 .bottom {
   padding-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  li {
+    padding: 10px 51px;
+  }
+
+  .linkList {
+    display: none;
+  }
+
+  .navList {
+    flex-direction: column;
+  }
+  .navList {
+    display: block;
+  }
+  .headerContainer {
+    align-items: start;
+  }
+  .hover:hover::before {
+    display: none;
+  }
+  .toggle {
+    display: none;
+  }
+  .active::before {
+    display: none;
+  }
 }

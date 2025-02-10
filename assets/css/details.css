@@ -1,0 +1,13 @@
+.slider span {
+  display: block;
+}
+
+.sliderInnerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider {
+  padding: 41px 6px;
+  margin: 0;
+}

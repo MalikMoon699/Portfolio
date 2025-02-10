@@ -11,15 +11,21 @@ body {
 }
 
 .cardF {
+  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
   padding: 25px 0px;
+      row-gap: 46px;
 }
 
 .cardS {
+  justify-content: center;
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
   padding: 25px 0px;
+      row-gap: 46px;
 }
 
 .card {
@@ -34,6 +40,13 @@ body {
   text-align: center;
 }
 
-.card h1{
-margin-bottom: 50px;
+.card h1 {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    height: 300px;
+    width: 300px;
+  }
 }

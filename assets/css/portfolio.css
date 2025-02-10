@@ -64,4 +64,22 @@
 
 .all{
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .all{
+   flex-direction: column;
+  }
+ 
+  .app img{
+    height: 42vh;
+  }
+  .card img{
+    height: 43vh;
+  }
+
+  .web img{
+   height: 37vh;
+  }
 }

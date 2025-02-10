@@ -65,7 +65,7 @@ section p {
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  left: 55px;
+  left: 3.5vw;
   background: #ffffff;
   border: 2px solid #34b7a7;
 }
@@ -75,8 +75,8 @@ section p {
   position: absolute;
   width: 4px;
   height: 623px;
-  top: 441px;
-  left: 63px;
+  top: 84vh;
+  left: 4vw;
   background: #ffffff;
   background-color: #34b7a7;
 }
@@ -87,18 +87,37 @@ section p {
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  right: 688px;
+  right: 48.5vw;
   background: #ffffff;
   border: 2px solid #34b7a7;
 }
-
 .rightContainer::before {
   content: "";
   position: absolute;
   width: 4px;
   height: 623px;
-  top: 441px;
-  right: 695px;
+  top: 85vh;
+  right: 49vw;
   background: #ffffff;
   background-color: #34b7a7;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .leftContainer h3::before,
+  .leftContainer::before,
+  .rightContainer::before,
+  .rightContainer h3::before {
+    display: none;
+  }
 }

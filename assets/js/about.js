@@ -28,11 +28,11 @@ const moveToNext=()=> {
   sliders[currentIndex].classList.add('active-1');
   dots[currentIndex].classList.add('dotActive');
   
-  sliderInnerContainer.style.transform = `translateX(-${105 * currentIndex}%)`;
+  sliderInnerContainer.style.transform = `translateX(-${108 * currentIndex}%)`;
 }
 
 setInterval(moveToNext, 4000);
 
 sliders[currentIndex].classList.add('active-1');
 dots[currentIndex].classList.add('dotActive');
-sliderInnerContainer.style.transform = `translateX(-${110 * currentIndex}%)`;
+sliderInnerContainer.style.transform = `translateX(-${0 * currentIndex}%)`;

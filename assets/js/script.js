@@ -1,3 +1,5 @@
+// Drop Down
+
 let arrow = document.getElementById("dropDown");
 let dropDown = document.getElementById("firstDrop");
 
@@ -22,4 +24,15 @@ deepArrow.addEventListener("mouseover", () => {
 
 deepArrow.addEventListener("mouseout", () => {
   deepDropDown.setAttribute("hidden", "");
+});
+
+// navbar
+
+const hamburger = document.getElementsByClassName("hamburger")[0];
+const toggle = document.getElementsByClassName("toggle")[0];
+const navList = document.getElementsByClassName("navList")[0];
+
+hamburger.addEventListener("click", () => {
+  navList.classList.toggle("navList");
+  toggle.classList.toggle("toggle");
 });
